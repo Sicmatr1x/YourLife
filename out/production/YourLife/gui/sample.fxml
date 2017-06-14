@@ -26,7 +26,7 @@
                            <children>
                               <HBox prefHeight="47.0" prefWidth="189.0" spacing="5.0">
                                  <children>
-                                    <TextField fx:id="bornTextField" promptText="1971-01-01" />
+                                    <TextField fx:id="bornTextField" text="1971-01-01" />
                                     <TextField fx:id="todayTextField" />
                                     <Button fx:id="btStart" mnemonicParsing="false" onAction="#startCompute" prefHeight="23.0" prefWidth="55.0" style="-fx-background-color: #32CD32;" text="START" textFill="WHITE" />
                                  </children>
