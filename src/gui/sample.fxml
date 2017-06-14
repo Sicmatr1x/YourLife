@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="831.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller">
+   <top>
+      <VBox prefHeight="40.0" prefWidth="958.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" prefHeight="128.0" prefWidth="148.0" text="如果以75岁为寿命的话，则人一生有75x12=900个月。下面是一个30x30的表，每一个格子代表一个月。在右侧start按钮前输入生日与今天的日期将会显示你过了你一生的多少个月。" wrapText="true" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="137.0" prefWidth="463.0">
+                     <children>
+                        <VBox prefHeight="163.0" prefWidth="604.0" spacing="5.0">
+                           <children>
+                              <HBox prefHeight="47.0" prefWidth="189.0" spacing="5.0">
+                                 <children>
+                                    <TextField fx:id="bornTextField" text="1971-01-01" />
+                                    <TextField fx:id="todayTextField" />
+                                    <Button fx:id="btStart" mnemonicParsing="false" onAction="#startCompute" prefHeight="23.0" prefWidth="55.0" style="-fx-background-color: #32CD32;" text="START" textFill="WHITE" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="47.0" prefWidth="189.0" spacing="5.0">
+                                 <children>
+                                    <TextField fx:id="begTextField1" />
+                                    <TextField fx:id="endTextField1" />
+                                    <Button fx:id="btStart1" mnemonicParsing="false" onAction="#drawHightLight1" prefHeight="23.0" prefWidth="55.0" style="-fx-background-color: #3A5FCD;" text="上色" textFill="WHITE" />
+                                    <TextField promptText="note" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="47.0" prefWidth="189.0" spacing="5.0">
+                                 <children>
+                                    <TextField fx:id="begTextField2" />
+                                    <TextField fx:id="endTextField2" />
+                                    <Button fx:id="btStart2" mnemonicParsing="false" onAction="#drawHightLight2" prefHeight="23.0" prefWidth="55.0" style="-fx-background-color: #912cee;" text="上色" textFill="WHITE" />
+                                    <TextField promptText="note" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="47.0" prefWidth="189.0" spacing="5.0">
+                                 <children>
+                                    <TextField fx:id="begTextField3" />
+                                    <TextField fx:id="endTextField3" />
+                                    <Button fx:id="btStart3" mnemonicParsing="false" onAction="#drawHightLight3" prefHeight="23.0" prefWidth="55.0" style="-fx-background-color: #FF7F24;" text="上色" textFill="WHITE" />
+                                    <TextField promptText="note" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="47.0" prefWidth="189.0" spacing="5.0">
+                                 <children>
+                                    <TextField fx:id="begTextField4" />
+                                    <TextField fx:id="endTextField4" />
+                                    <Button fx:id="btStart4" mnemonicParsing="false" onAction="#drawHightLight4" prefHeight="23.0" prefWidth="55.0" style="-fx-background-color: #EEEE00;" text="上色" textFill="WHITE" />
+                                    <TextField promptText="note" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="47.0" prefWidth="189.0" spacing="5.0">
+                                 <children>
+                                    <TextField fx:id="begTextField5" />
+                                    <TextField fx:id="endTextField5" />
+                                    <Button fx:id="btStart5" mnemonicParsing="false" onAction="#drawHightLight5" prefHeight="23.0" prefWidth="55.0" style="-fx-background-color: #8B5A00;" text="上色" textFill="WHITE" />
+                                    <TextField promptText="note" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <GridPane fx:id="gridPane" maxHeight="700.0" maxWidth="1140.0" prefHeight="700.0" prefWidth="1140.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+   </center>
+</BorderPane>
